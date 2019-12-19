@@ -27,7 +27,7 @@ def optimize_graph(logger=None, verbose=False):
     try:
         # we don't need GPU for optimizing the graph
         from tensorflow.python.tools.optimize_for_inference_lib import optimize_for_inference
-        tf.gfile.MakeDirs(args.output_dir)
+        tf.gfile.MakeDirs(args.output_dir)#生成模型输出路径
 
         config_fp = args.config_name
         logger.info('model config: %s' % config_fp)
