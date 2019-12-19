@@ -5,7 +5,7 @@ import modeling
 import args
 import tensorflow as tf
 import os
-
+#该代码的主要目的是把预训练好的模型加载进来，并修改输出层
 
 def set_logger(context, verbose=False):
     logger = logging.getLogger(context)
